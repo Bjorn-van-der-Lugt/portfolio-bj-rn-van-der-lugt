@@ -10,6 +10,7 @@ const PortfolioFunctions = (function () {
     const formSubmitButton = document.getElementById('contact__form-button');
     const currentYearElement = document.getElementById('footer__current-year');
     const projectCard = document.querySelectorAll('.projects__card');
+   
 
     // Modules
     const ThemeManager = {
@@ -22,9 +23,11 @@ const PortfolioFunctions = (function () {
             this.activeTheme = theme;
             localStorage.setItem('theme', theme);
 
-            themeToggleButton.innerHTML = theme === 'light'
-                ? '<i class="fa-duotone fa-solid fa-moon"></i>'
-                : '<i class="fa-duotone fa-solid fa-sun"></i>';
+            const icon = themeToggleButton.querySelector('i');
+            if (icon) {
+                icon.classList.toggle('fa-moon', theme === 'light');
+                icon.classList.toggle('fa-sun', theme === 'dark');
+            }
         },
 
         // Toggles between 'light' and 'dark' themes
@@ -93,11 +96,10 @@ const PortfolioFunctions = (function () {
                 };
                 if (errorMessageElement) {
                     errorMessageElement.textContent = errorMessages[field.name] || 'Invalid input.';
+                    errorMessageElement.removeAttribute('aria-hidden');
                 }
             } else {
-                if (errorMessageElement) {
-                    errorMessageElement.textContent = '';
-                }
+                errorMessageElement.setAttribute('aria-hidden', 'true');
             }
         },
 
@@ -159,27 +161,29 @@ const PortfolioFunctions = (function () {
         */
 
         // Handles project card expand/collapse functionality
+        
         handleProjectCardToggle() {
             projectCard.forEach(card => {
                 const expandToggle = card.querySelector('.projects__expand-toggle');
                 const projectText = card.querySelector('.projects__text.wrapper');
+                const caret = expandToggle.querySelector('.fa-caret-down');
                 if (expandToggle && projectText) {
                     expandToggle.addEventListener('click', function () {
                         projectText.classList.toggle('expanded');
-                        projectText.classList.contains('expanded') 
-                ? expandToggle.innerHTML = '<i class="fa-solid fa-caret-up"></i>' 
-                : expandToggle.innerHTML = '<i class="fa-solid fa-caret-down"></i>';
+                        caret.classList.toggle('fa-caret-up', projectText.classList.contains('expanded'));
+                        caret.classList.toggle('fa-caret-down', !projectText.classList.contains('expanded'));
                     });
                 }
-
-                
-
             })
         },
 
         handleLangToggle() {
+            const caret = langToggleButton.querySelectorAll('i')[1];
+            console.log(caret);
             if (langDropdown) {
-                langDropdown.classList.toggle('visible');
+                langDropdown.classList.toggle('expanded');
+                caret.classList.toggle('fa-caret-up', langDropdown.classList.contains('expanded'));
+            caret.classList.toggle('fa-caret-down', !langDropdown.classList.contains('expanded'));
             }
         }        
     };

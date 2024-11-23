@@ -26,3 +26,9 @@ build/
 *.tmp
 *.temp
 *.swp
+
+# Ignore npm configuration file
+.npmrc
+
+# Ignore my own git notes
+git.txt

@@ -55,9 +55,10 @@
   <meta name="author" content="Björn van der Lugt">
 
   <!-- Font Awesome Icons -->
+
   <!--<script src="../node_modules/@awesome.me/kit-098a6cd2de/icons/js/all.js"></script>-->
-  <script src="https://kit.fontawesome.com/e4ca2860c2.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/098a6cd2de.js" crossorigin="anonymous"></script>
+  
 
 </head>
 
@@ -74,14 +75,16 @@
         <li class="header__list"><a href="#projects" class="header__link">Projects</a></li>
         <li class="header__list"><a href="#blog" class="header__link">Blog</a></li>
         <li class="header__list"><a href="#contact" class="header__link">Contact</a></li>
-        <li class="header__list"><button id="header__mode-toggle" class="header__mode-toggle" aria-label="dark/light mode toggle"></button></li>
+        <li class="header__list"><button id="header__mode-toggle" class="header__mode-toggle" aria-label="dark/light mode toggle">
+          <i class="fa-sharp-duotone fa-solid fa-sun"></i>
+        </button></li>
         <li class="header__list header__languages">
           <button id="header__language-toggle" 
                   class="header__language-toggle"  
                   aria-label="language toggle">
-            <i class="fa-solid fa-globe"></i>
+            <i class="fa-duotone fa-solid fa-globe"></i>
             <span class="current-lang">EN</span>
-            <i class="fa-sharp fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-caret-down"></i>
           </button>
           <ul class="header__languages-dropdown" id="header__languages-dropdown">
             <li class="header__list language"><a href="?lang=en" class="header__link language" aria-label="English">EN</a></li>
@@ -219,7 +222,7 @@
               The website I created for her is a simple single-page application that provides a minimal online presence.
             </p>
           </div>
-          <button class="projects__expand-toggle">
+          <button class="projects__expand-toggle"><i class="fa-solid fa-caret-down"></i>
           </button>
           <div class="projects__text wrapper">
             <h4 class="projects__header II">Tech Stack Used:</h4>
@@ -286,6 +289,7 @@
             </p>
           </div>
         </div>
+        <!--
         <div class="projects__card">   
           <h3 class="projects__card-title">
             <a class="projects__link"
@@ -454,6 +458,7 @@
                 </p>
               </div>
             </div>
+            -->
     </section>
 
     <section id="contact" class="contact">
@@ -521,7 +526,7 @@
 
       <form id="contact__form" class="contact__form" action="/send-email" method="POST">
         <div class="contact__form-grid">
-          <div class="form-group">
+          <div class="contact__form-group">
             <label class="contact__label" for="name">Name: <span class="contact-form__required" aria-label="required">*</span></label>
             <input 
               class="contact__input" 
