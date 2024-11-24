@@ -1,0 +1,331 @@
+---
+bars:
+  aliases:
+    names:
+      - navicon
+    unicodes:
+      secondary:
+        - 10f0c9
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.0.0-beta3
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  label: Bars
+  search:
+    terms:
+      - checklist
+      - drag
+      - hamburger
+      - list
+      - menu
+      - nav
+      - navigation
+      - ol
+      - reorder
+      - settings
+      - todo
+      - ul
+  styles:
+    - duotone
+  unicode: f0c9
+  voted: false
+bootstrap:
+  changes:
+    - 5.8.0
+    - 5.15.4
+    - 6.0.0-beta1
+  label: Bootstrap
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: f836
+  voted: false
+caret-down:
+  aliases:
+    unicodes:
+      secondary:
+        - 10f0d7
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  label: Caret Down
+  search:
+    terms:
+      - arrow
+      - dropdown
+      - expand
+      - menu
+      - more
+      - triangle
+  styles:
+    - solid
+  unicode: f0d7
+  voted: false
+caret-up:
+  aliases:
+    unicodes:
+      secondary:
+        - 10f0d8
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  label: Caret Up
+  search:
+    terms:
+      - arrow
+      - collapse
+      - triangle
+      - upgrade
+  styles:
+    - solid
+  unicode: f0d8
+  voted: false
+css3-alt:
+  changes:
+    - 5.0.0
+  label: Alternate CSS3 Logo
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: f38b
+  voted: false
+express:
+  label: express
+  styles:
+    - custom
+  unicode: e007
+  voted: false
+font-awesome:
+  aliases:
+    names:
+      - font-awesome-flag
+      - font-awesome-logo-full
+    unicodes:
+      composite:
+        - f425
+        - f4e6
+      primary:
+        - f4e6
+      secondary:
+        - 10f2b4
+        - 10f4e6
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 5.15.4
+    - 6.0.0-beta1
+    - 6.1.2
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.5.2
+    - 6.6.0
+    - 6.7.0
+  label: Font Awesome
+  search:
+    terms:
+      - awesome
+      - flag
+      - font
+      - icons
+      - typeface
+  styles:
+    - brands
+  unicode: f2b4
+  voted: false
+free-code-camp:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 5.12.0
+  label: freeCodeCamp
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: f2c5
+  voted: false
+github:
+  changes:
+    - 2.0.0
+    - 5.0.0
+  label: GitHub
+  search:
+    terms:
+      - octocat
+  styles:
+    - brands
+  unicode: f09b
+  voted: false
+globe:
+  aliases:
+    unicodes:
+      composite:
+        - 1f310
+      secondary:
+        - 10f0ac
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 5.0.9
+    - 5.11.0
+    - 5.11.1
+    - 6.0.0-beta1
+    - 6.0.0-beta3
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  label: Globe
+  search:
+    terms:
+      - all
+      - coordinates
+      - country
+      - earth
+      - global
+      - globe
+      - globe with meridians
+      - gps
+      - internet
+      - language
+      - localize
+      - location
+      - map
+      - meridians
+      - network
+      - online
+      - place
+      - planet
+      - translate
+      - travel
+      - world
+      - www
+  styles:
+    - duotone
+  unicode: f0ac
+  voted: false
+html5:
+  changes:
+    - 3.1.0
+    - 5.0.0
+  label: HTML 5 Logo
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: f13b
+  voted: false
+icons8-chatgpt:
+  label: icons8-chatgpt
+  styles:
+    - custom
+  unicode: e00a
+  voted: false
+jquery:
+  label: jquery
+  styles:
+    - custom
+  unicode: e000
+  voted: false
+js:
+  changes:
+    - 5.0.0
+  label: JavaScript (JS)
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: f3b8
+  voted: false
+linkedin:
+  changes:
+    - 1.0.0
+    - 5.0.0
+  label: LinkedIn
+  search:
+    terms:
+      - linkedin-square
+      - linkin
+  styles:
+    - brands
+  unicode: f08c
+  voted: false
+mongodb:
+  label: mongodb
+  styles:
+    - custom
+  unicode: e002
+  voted: false
+node-js:
+  changes:
+    - 5.0.0
+    - 5.0.3
+  label: Node.js JS
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: f3d3
+  voted: false
+react:
+  changes:
+    - 5.0.0
+  label: React
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: f41b
+  voted: false
+redux:
+  label: redux
+  styles:
+    - custom
+  unicode: e001
+  voted: false
+sass:
+  label: sass
+  styles:
+    - custom
+  unicode: e006
+  voted: false
+x-twitter:
+  changes:
+    - 6.4.2
+  label: X Twitter
+  search:
+    terms:
+      - elon
+      - twitter
+      - x
+  styles:
+    - brands
+  unicode: e61b
+  voted: false

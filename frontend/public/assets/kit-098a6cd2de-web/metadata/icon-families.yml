@@ -1,0 +1,631 @@
+---
+arrow-up-right-from-square:
+  aliases:
+    names:
+      - external-link
+    unicodes:
+      secondary:
+        - 10f08e
+  changes:
+    - 1.0.0
+    - 5.0.0
+    - 5.11.0
+    - 6.0.0-beta1
+    - 6.1.0
+    - 6.2.0
+    - 6.2.1
+    - 6.3.0
+    - 6.4.0
+    - 6.4.1
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free: []
+    pro:
+      - family: sharp-duotone
+        style: solid
+  label: Arrow Up Right From Square
+  search:
+    terms:
+      - new
+      - open
+      - send
+      - share
+      - upgrade
+  unicode: f08e
+  voted: false
+bars:
+  aliases:
+    names:
+      - navicon
+    unicodes:
+      secondary:
+        - 10f0c9
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.0.0-beta3
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free: []
+    pro:
+      - family: duotone
+        style: solid
+  label: Bars
+  search:
+    terms:
+      - checklist
+      - drag
+      - hamburger
+      - list
+      - menu
+      - nav
+      - navigation
+      - ol
+      - reorder
+      - settings
+      - todo
+      - ul
+  unicode: f0c9
+  voted: false
+bootstrap:
+  changes:
+    - 5.8.0
+    - 5.15.4
+    - 6.0.0-beta1
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: Bootstrap
+  search:
+    terms: []
+  unicode: f836
+  voted: false
+caret-down:
+  aliases:
+    unicodes:
+      secondary:
+        - 10f0d7
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: solid
+    pro:
+      - family: classic
+        style: solid
+  label: Caret Down
+  search:
+    terms:
+      - arrow
+      - dropdown
+      - expand
+      - menu
+      - more
+      - triangle
+  unicode: f0d7
+  voted: false
+caret-up:
+  aliases:
+    unicodes:
+      secondary:
+        - 10f0d8
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: solid
+    pro:
+      - family: classic
+        style: solid
+  label: Caret Up
+  search:
+    terms:
+      - arrow
+      - collapse
+      - triangle
+      - upgrade
+  unicode: f0d8
+  voted: false
+css3-alt:
+  changes:
+    - 5.0.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: Alternate CSS3 Logo
+  search:
+    terms: []
+  unicode: f38b
+  voted: false
+download:
+  aliases:
+    unicodes:
+      secondary:
+        - 10f019
+  changes:
+    - 1.0.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free: []
+    pro:
+      - family: sharp-duotone
+        style: solid
+  label: Download
+  search:
+    terms:
+      - export
+      - hard drive
+      - insert
+      - save
+      - transfer
+  unicode: f019
+  voted: false
+express:
+  familyStylesByLicense:
+    other:
+      - family: kit
+        style: custom
+  label: express
+  unicode: e007
+  voted: false
+font-awesome:
+  aliases:
+    names:
+      - font-awesome-flag
+      - font-awesome-logo-full
+    unicodes:
+      composite:
+        - f425
+        - f4e6
+      primary:
+        - f4e6
+      secondary:
+        - 10f2b4
+        - 10f4e6
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 5.15.4
+    - 6.0.0-beta1
+    - 6.1.2
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.5.2
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: Font Awesome
+  search:
+    terms:
+      - awesome
+      - flag
+      - font
+      - icons
+      - typeface
+  unicode: f2b4
+  voted: false
+free-code-camp:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 5.12.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: freeCodeCamp
+  search:
+    terms: []
+  unicode: f2c5
+  voted: false
+github:
+  changes:
+    - 2.0.0
+    - 5.0.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: GitHub
+  search:
+    terms:
+      - octocat
+  unicode: f09b
+  voted: false
+globe:
+  aliases:
+    unicodes:
+      composite:
+        - 1f310
+      secondary:
+        - 10f0ac
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 5.0.9
+    - 5.11.0
+    - 5.11.1
+    - 6.0.0-beta1
+    - 6.0.0-beta3
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free: []
+    pro:
+      - family: duotone
+        style: solid
+  label: Globe
+  search:
+    terms:
+      - all
+      - coordinates
+      - country
+      - earth
+      - global
+      - globe
+      - globe with meridians
+      - gps
+      - internet
+      - language
+      - localize
+      - location
+      - map
+      - meridians
+      - network
+      - online
+      - place
+      - planet
+      - translate
+      - travel
+      - world
+      - www
+  unicode: f0ac
+  voted: false
+html5:
+  changes:
+    - 3.1.0
+    - 5.0.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: HTML 5 Logo
+  search:
+    terms: []
+  unicode: f13b
+  voted: false
+icons8-chatgpt:
+  familyStylesByLicense:
+    other:
+      - family: kit
+        style: custom
+  label: icons8-chatgpt
+  unicode: e00a
+  voted: false
+jquery:
+  familyStylesByLicense:
+    other:
+      - family: kit
+        style: custom
+  label: jquery
+  unicode: e000
+  voted: false
+js:
+  changes:
+    - 5.0.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: JavaScript (JS)
+  search:
+    terms: []
+  unicode: f3b8
+  voted: false
+linkedin:
+  changes:
+    - 1.0.0
+    - 5.0.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: LinkedIn
+  search:
+    terms:
+      - linkedin-square
+      - linkin
+  unicode: f08c
+  voted: false
+mongodb:
+  familyStylesByLicense:
+    other:
+      - family: kit
+        style: custom
+  label: mongodb
+  unicode: e002
+  voted: false
+moon:
+  aliases:
+    unicodes:
+      composite:
+        - 1f319
+        - 23fe
+      secondary:
+        - 10f186
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 5.11.0
+    - 5.11.1
+    - 6.0.0-beta1
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free: []
+    pro:
+      - family: sharp-duotone
+        style: solid
+  label: Moon
+  search:
+    terms:
+      - Power Sleep Symbol
+      - contrast
+      - crescent
+      - crescent moon
+      - dark
+      - lunar
+      - moon
+      - night
+  unicode: f186
+  voted: false
+node-js:
+  changes:
+    - 5.0.0
+    - 5.0.3
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: Node.js JS
+  search:
+    terms: []
+  unicode: f3d3
+  voted: false
+paper-plane:
+  aliases:
+    unicodes:
+      composite:
+        - f1d9
+      secondary:
+        - 10f1d8
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.2.0
+    - 6.2.1
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free: []
+    pro:
+      - family: sharp-duotone
+        style: solid
+  label: Paper Plane
+  search:
+    terms:
+      - air
+      - float
+      - fold
+      - mail
+      - paper
+      - send
+  unicode: f1d8
+  voted: false
+react:
+  changes:
+    - 5.0.0
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: React
+  search:
+    terms: []
+  unicode: f41b
+  voted: false
+redux:
+  familyStylesByLicense:
+    other:
+      - family: kit
+        style: custom
+  label: redux
+  unicode: e001
+  voted: false
+sass:
+  familyStylesByLicense:
+    other:
+      - family: kit
+        style: custom
+  label: sass
+  unicode: e006
+  voted: false
+sun:
+  aliases:
+    unicodes:
+      composite:
+        - '2600'
+      secondary:
+        - 10f185
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 5.5.0
+    - 6.0.0-beta1
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free: []
+    pro:
+      - family: sharp-duotone
+        style: solid
+  label: Sun
+  search:
+    terms:
+      - bright
+      - brighten
+      - contrast
+      - day
+      - lighter
+      - rays
+      - sol
+      - solar
+      - star
+      - sun
+      - sunny
+      - weather
+  unicode: f185
+  voted: false
+ufo:
+  aliases:
+    unicodes:
+      composite:
+        - 1f6f8
+      secondary:
+        - '10e047'
+  changes:
+    - 5.12.0
+    - 5.14.0
+    - 6.0.0-beta1
+    - 6.0.0-beta3
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free: []
+    pro:
+      - family: sharp-duotone
+        style: solid
+  label: Ufo
+  search:
+    terms:
+      - UFO
+      - abduct
+      - alien
+      - extraterrestrial
+      - flying saucer
+      - space
+      - spacecraft
+      - spaceship
+      - t-craft
+      - travel
+      - unidentified flying object
+  unicode: e047
+  voted: false
+x-twitter:
+  changes:
+    - 6.4.2
+  familyStylesByLicense:
+    free:
+      - family: classic
+        style: brands
+    pro:
+      - family: classic
+        style: brands
+  label: X Twitter
+  search:
+    terms:
+      - elon
+      - twitter
+      - x
+  unicode: e61b
+  voted: false

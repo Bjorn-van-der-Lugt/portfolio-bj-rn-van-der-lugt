@@ -1,0 +1,11 @@
+---
+the-us-sunnah-foundation:
+  icons:
+    - globe
+  label: The us-Sunnah Foundation
+  url: https://www.ussunnah.org
+un-ocha:
+  icons:
+    - arrow-up-right-from-square
+  label: United Nations OCHA
+  url: https://www.unocha.org

@@ -1,0 +1,34 @@
+# Ignore environment variable file
+.env
+
+# Ignore node_modules folder
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Ignore build outputs (if you have any)
+dist/
+build/
+
+# Ignore any temporary files
+*.tmp
+*.temp
+*.swp
+
+# Ignore npm configuration file
+.npmrc
+
+# Ignore my own git notes
+git.txt
