@@ -11,5 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "@awesome.me/kit-098a6cd2de": "^1.0.69"
-  }
+  },
+  "private": true,
+  "engines": {
+  "node": ">=16.0.0",
+  "npm": ">=8.0.0"
+}
+
+
 }

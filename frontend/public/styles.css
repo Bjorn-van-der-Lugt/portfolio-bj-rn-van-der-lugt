@@ -74,11 +74,12 @@
     --input-focus-bg: #FFFFFF;
     --input-focus-color: #000000;
     --input-focus-outline: 1px solid none;
-    --invalid-bg-color: #FFE6E6; /* Light Red Tint for background */
-    --invalid-color: #D32F2F; /* Muted Red for text color */
-    --invalid-outline: 2px solid #D32F2F; /* Muted Red outline */
-    --error-message-color: transparent; /* Hidden initially */
-    --error-message-color-focus: #C62828; /* Deep Muted Red for focus state */
+    --invalid-bg-color: #FFE6E6; 
+    --invalid-color: #D32F2F; 
+    --invalid-outline: 2px solid #D32F2F; 
+    --error-message-color: transparent; 
+    --error-message-color-focus: #C62828; 
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -368,7 +369,11 @@ button, a { -webkit-tap-highlight-color: transparent; } section { scroll-margin:
     0;
 }
 
-.projects__header.II {
+.projects__card.II .projects__card-title {
+    text-align: right;
+}
+
+.projects__header.stack {
     margin: var(--margin-vertical) 0;
 }
 
@@ -387,6 +392,10 @@ button, a { -webkit-tap-highlight-color: transparent; } section { scroll-margin:
     color: var(--projects-color);
     padding: 0 calc( var(--padding-horizontal) * 2 );
     font-size: 1.15rem;
+}
+
+.projects__card.II .projects__preview-text {
+    text-align: right;
 }
 
 .projects__ul {
@@ -447,6 +456,10 @@ button, a { -webkit-tap-highlight-color: transparent; } section { scroll-margin:
     background-color: var(--button-bg);
     border-radius: var(--border-radius);
     color: var(--button-color);
+}
+
+.projects__card.II .projects__expand-toggle {
+    left: 0;
 }
 
 .projects__expand-toggle:hover {
