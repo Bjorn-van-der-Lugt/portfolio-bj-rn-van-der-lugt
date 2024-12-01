@@ -55,41 +55,41 @@
   <meta name="author" content="Björn van der Lugt">
 
   <!-- Font Awesome Icons -->
-
   <link rel="stylesheet" href="assets/kit-098a6cd2de-web/css/all.css">
+  <script src="https://kit.fontawesome.com/e4ca2860c2.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <header id="header" class="header u-hide-on-short-screens">
-    <button id="header__menu-toggle" class="header__menu-toggle" 
+  <header id="header" class="header">
+    <button id="header__menu-toggle" class="header__menu-toggle u-button II" 
             aria-roledescription="enables navigation menu">
               <i class="fa-duotone fa-solid fa-bars"></i>
     </button>
     <nav class="header__nav" aria-label="Primary Navigation">
       <ul class="header__ul">
-        <li class="header__list"><a href="#landing" class="header__link">Home</a></li>
-        <li class="header__list"><a href="#about-me" class="header__link">About Me</a></li>
-        <li class="header__list"><a href="#projects" class="header__link">Projects</a></li>
-        <li class="header__list"><a href="#blog" class="header__link">Blog</a></li>
-        <li class="header__list"><a href="#contact" class="header__link">Contact</a></li>
-        <li class="header__list"><button id="header__mode-toggle" class="header__mode-toggle" aria-label="dark/light mode toggle">
+        <li class="header__list"><a href="#landing" class="u-a">Home</a></li>
+        <li class="header__list"><a href="#about-me" class="u-a">About Me</a></li>
+        <li class="header__list"><a href="#projects" class="u-a">Projects</a></li>
+        <li class="header__list"><a href="#blog" class="u-a">Blog</a></li>
+        <li class="header__list"><a href="#contact" class="u-a">Contact</a></li>
+        <li class="header__list"><button id="header__mode-toggle" class="header__mode-toggle u-button II" aria-label="dark/light mode toggle">
           <i class="fa-sharp-duotone fa-solid fa-sun"></i>
         </button></li>
-        <li class="header__list header__languages">
+        <li class="header__list languages-wrapper">
           <button id="header__language-toggle" 
-                  class="header__language-toggle"  
+                  class="header__language-toggle u-button II"  
                   aria-label="language toggle">
             <i class="fa-duotone fa-solid fa-globe"></i>
             <span class="current-lang">EN</span>
             <i class="fa-solid fa-caret-down"></i>
           </button>
           <ul class="header__languages-dropdown" id="header__languages-dropdown">
-            <li class="header__list language"><a href="?lang=en" class="header__link language" aria-label="English">EN</a></li>
-            <li class="header__list language"><a href="?lang=nl" class="header__link language" aria-label="Nederlands">NL</a></li>
-            <li class="header__list language"><a href="?lang=fr" class="header__link language" aria-label="Français">FR</a></li>
-            <li class="header__list language"><a href="?lang=de" class="header__link language" aria-label="Deutsch">DE</a></li>
-            <li class="header__list language"><a href="?lang=pl" class="header__link language" aria-label="Polski">PL</a></li>
+            <li class="header__list language"><a href="?lang=en" class="u-a language" aria-label="English">EN</a></li>
+            <li class="header__list language"><a href="?lang=nl" class="u-a language" aria-label="Nederlands">NL</a></li>
+            <li class="header__list language"><a href="?lang=fr" class="u-a language" aria-label="Français">FR</a></li>
+            <li class="header__list language"><a href="?lang=de" class="u-a language" aria-label="Deutsch">DE</a></li>
+            <li class="header__list language"><a href="?lang=pl" class="u-a language" aria-label="Polski">PL</a></li>
 
           </ul>
         </li>
@@ -99,9 +99,12 @@
 </header> 
 <section id="landing" class="landing">
   <div class="landing__sinister">
-    <h1 class="landing__title">Welcome to My Portfolio</h1>
+    <h1 class="landing__header">Welcome to My Portfolio</h1>
     <p class="landing__text">I'm Björn van der Lugt, a Full-Stack Developer Specializing in MERN</p>
-    <a href="#projects" class="landing__cta">View My Work ! <i class="fa-sharp-duotone fa-solid fa-ufo"></i></a>
+    <div class="landing__button-wrapper">
+    <a href="#projects" class="landing__cta u-button">View My Work <i class="fa-sharp-duotone fa-solid fa-ufo"></i></a>
+    <button class="landing__share-button u-button"><i class="fa-duotone fa-light fa-share-nodes"></i></button>
+  </div>
   </div>
   <div class="landing__dexter"></div>
 </section>
@@ -129,35 +132,35 @@
       <h4 class="about-me__header">Front-End:</h4>
     
       <ul class="about-me__ul">
-        <li class="about-me__list"><i class="fa-brands fa-html5"></i> HTML</li>
-        <li class="about-me__list"><i class="fa-brands fa-css3-alt"></i> CSS</li>
-        <li class="about-me__list"><i class="fa-brands fa-js"></i> JavaScript</li>
+        <li class="about-me__list"><i class="fa-brands fa-html5"></i> HTML,</li>
+        <li class="about-me__list"><i class="fa-brands fa-css3-alt"></i> CSS,</li>
+        <li class="about-me__list"><i class="fa-brands fa-js"></i> JavaScript,</li>
         <li class="about-me__list">
-          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="about-me__link">
-            <i class="fa-brands fa-bootstrap"></i> Bootstrap
+          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="u-a">
+            <i class="fa-brands fa-bootstrap"></i> Bootstrap,
           </a>
         </li>
         <li class="about-me__list">
-          <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer" class="about-me__link">
-            <i class="fa-kit fa-sass"></i> SCSS
+          <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer" class="u-a">
+            <i class="fa-kit fa-sass"></i> SCSS,
           </a>
         </li>
         <li class="about-me__list">
-          <a href="https://jquery.com/" target="_blank" rel="noopener noreferrer" class="about-me__link">
-            <i class="fa-kit fa-jquery"></i> jQuery
+          <a href="https://jquery.com/" target="_blank" rel="noopener noreferrer" class="u-a">
+            <i class="fa-kit fa-jquery"></i> jQuery,
           </a>
         </li>
         <li class="about-me__list">
-          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="about-me__link">
-            <i class="fa-brands fa-react"></i> React
+          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="u-a">
+            <i class="fa-brands fa-react"></i> React,
           </a>
         </li>
         <li class="about-me__list">
-          <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer" class="about-me__link">
-            <i class="fa-kit fa-redux"></i> Redux
+          <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer" class="u-a">
+            <i class="fa-kit fa-redux"></i> Redux,
           </a>
         </li>
-        <li class="about-me__list"><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" class="about-me__link nextjs">NEXT.JS</a></li>
+        <li class="about-me__list"><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" class="u-a II">NEXT.JS</a></li>
       </ul>
 
       <p class="about-me__text">I use these technologies to create the visual and interactive elements of websites and web applications</p>
@@ -166,22 +169,22 @@
     
       <ul class="about-me__ul">
         <li class="about-me__list">
-          <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="about-me__link" aria-label="node js"> 
-          Node.<i class="fa-brands fa-node-js"></i>
+          <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="u-a" aria-label="node js"> 
+          Node.<i class="fa-brands fa-node-js"></i> ,
           </a>
         </li>
         <li class="about-me__list">
-          <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="about-me__link" aria-label="express js"> 
-          Express.<i class="fa-brands fa-js"></i>
+          <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="u-a" aria-label="express js"> 
+          Express.<i class="fa-brands fa-js"></i> ,
           </a>
         </li>
         <li class="about-me__list">
-          <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="about-me__link" aria-label="mongo db">
-            MongoDB<i class="fa-kit fa-mongodb"></i>
+          <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="u-a" aria-label="mongo db">
+            MongoDB<i class="fa-kit fa-mongodb"></i> ,
           </a>
         </li>
         <li class="about-me__list">
-          <a href="https://mongoosejs.com/" target="_blank" rel="noopener noreferrer" class="about-me__link mongoose" aria-label="mongo db">
+          <a href="https://mongoosejs.com/" target="_blank" rel="noopener noreferrer" class="u-a II" aria-label="mongoose">
             mongoose
           </a>
         </li>
@@ -208,7 +211,7 @@
 
       <div class="projects__card">   
         <h3 class="projects__card-title">
-          <a class="projects__link"
+          <a class="u-a"
              href="https://www.paznokcie-joanna-kielar.pl/"
              target="__blank"
              rel="noopener noreferrer">
@@ -223,45 +226,46 @@
               The website I created for her is a simple single-page application that provides a minimal online presence.
             </p>
           </div>
-          <button class="projects__expand-toggle"><i class="fa-solid fa-caret-down"></i>
-          </button>
+          <div class="projects__button-wrapper">
+            <button class="projects__share-button u-button"><i class="fa-duotone fa-light fa-share-nodes"></i></button>
+            <button class="projects__expand-toggle u-button"><i class="fa-solid fa-caret-down"></i></button>
+          </div>
           <div class="projects__text wrapper">
-            <h4 class="projects__header stack">Tech Stack Used:</h4>
             <ul class="projects__ul">
               <li class="projects__list"><i class="fa-brands fa-html5"></i> HTML</li>
               <li class="projects__list"><i class="fa-brands fa-css3-alt"></i> CSS</li>
               <li class="projects__list"><i class="fa-brands fa-js"></i> JavaScript</li>
 
               <li class="projects__list">
-                <a href="https://github.com/" rel="noopener noreferrer" target="_blank"  class="projects__link">
+                <a href="https://github.com/" rel="noopener noreferrer" target="_blank"  class="u-a">
                   <i class="fa-brands fa-github"></i>
                     Github
                 </a>
               </li>
 
               <li class="projects__list">
-                <a href="https://chatgpt.com/"  rel="noreferrer noopener" target="_blank" class="projects__link">
+                <a href="https://chatgpt.com/"  rel="noreferrer noopener" target="_blank" class="u-a">
                   <i class="fa-kit fa-icons8-chatgpt"></i> ChatGPT
                 </a>
               </li>
 
               <li class="projects__list">
-                <a href="https://favicon.io/" rel="noreferrer noopener" target="_blank" class="projects__link favicon"> favicon.io</a>
+                <a href="https://favicon.io/" rel="noreferrer noopener" target="_blank" class="u-a II"> favicon.io</a>
               </li>
 
               <li class="projects__list">
-                <a href="https://fontawesome.com/" rel="noreferrer noopener" target="_blank" class="projects__link"> 
+                <a href="https://fontawesome.com/" rel="noreferrer noopener" target="_blank" class="u-a"> 
                   <i class="fa-brands fa-font-awesome"></i> Font Awesome
                 </a>
               </li>
     
               <li class="projects__list">
-                <a href="https://www.toptal.com/" rel="noreferrer noopener" target="_blank" class="projects__link toptal">toptal.com</a>
+                <a href="https://www.toptal.com/" rel="noreferrer noopener" target="_blank" class="u-a II">toptal.com</a>
               </li>
               <li class="projects__list">Stock Photo Websites</li>
             </ul>
           
-            <h4 class="projects__header II">Challenges</h4>
+            <h4 class="projects__card-header">Challenges</h4>
             <p class="projects__text"> 
               I was unfamiliar with the beauty industry, which made it difficult to 
               find appropriate images to match the services offered. Additionally, 
@@ -274,7 +278,7 @@
               so I chose to stop where I felt in the moment it was too early to stop, trusting that it was 
               good enough for the client’s needs. 
             </p> 
-            <h4 class="projects__header II">Solutions:</h4> 
+            <h4 class="projects__card-header">Solutions:</h4> 
             <p class="projects__text"> I searched extensively across various stock photo websites and collaborated 
               closely with the client to ensure the chosen images met her needs. 
             </p> 
@@ -295,7 +299,7 @@
 
         <div class="projects__card">   
           <h3 class="projects__card-title">
-            <a class="projects__link"
+            <a class="u-a"
                href=""
                target="__blank"
                rel="noopener noreferrer">
@@ -308,56 +312,58 @@
               <p class="projects__preview-text">Björn van der Lugt, an aspiring MERN developer. Speaking in third person? 
                 Totally not weird! To showcase my skills and look for full-time positions and freelance opportunities, 
                 I created this portfolio. Here's a brief overview of the project—short and sweet to avoid redundancy.
+               
               </p>
             </div>
-            <button class="projects__expand-toggle"><i class="fa-solid fa-caret-down"></i>
-            </button>
+              <div class="projects__button-wrapper">
+                <button class="projects__share-button u-button"><i class="fa-duotone fa-light fa-share-nodes"></i></button>
+                <button class="projects__expand-toggle u-button"><i class="fa-solid fa-caret-down"></i></button>
+              </div>
             <div class="projects__text wrapper">
-              <h4 class="projects__header stack">Tech Stack Used:</h4>
               <ul class="projects__ul">
                 <li class="projects__list"><i class="fa-brands fa-html5"></i> HTML</li>
                 <li class="projects__list"><i class="fa-brands fa-css3-alt"></i> CSS</li>
                 <li class="projects__list"><i class="fa-brands fa-js"></i> JavaScript</li>
                 <li class="projects__list">
-                  <a href="https://github.com/" rel="noopener noreferrer" target="_blank"  class="projects__link">
+                  <a href="https://github.com/" rel="noopener noreferrer" target="_blank"  class="u-a">
                     <i class="fa-brands fa-github"></i>
                       Github
                   </a>
                 </li>
   
                 <li class="projects__list">
-                  <a href="https://chatgpt.com/"  rel="noreferrer noopener" target="_blank" class="projects__link">
+                  <a href="https://chatgpt.com/"  rel="noreferrer noopener" target="_blank" class="u-a">
                     <i class="fa-kit fa-icons8-chatgpt"></i> ChatGPT
                   </a>
                 </li>
   
                 <li class="projects__list">
-                  <a href="https://favicon.io/" rel="noreferrer noopener" target="_blank" class="projects__link favicon"> favicon.io</a>
+                  <a href="https://favicon.io/" rel="noreferrer noopener" target="_blank" class="u-a II"> favicon.io</a>
                 </li>
   
                 <li class="projects__list">
-                  <a href="https://fontawesome.com/" rel="noreferrer noopener" target="_blank" class="projects__link"> 
+                  <a href="https://fontawesome.com/" rel="noreferrer noopener" target="_blank" class="u-a"> 
                     <i class="fa-brands fa-font-awesome"></i> Font Awesome
                   </a>
                 </li>
       
                 <li class="projects__list">
-                  <a href="https://www.toptal.com/" rel="noreferrer noopener" target="_blank" class="projects__link toptal">toptal.com</a>
+                  <a href="https://www.toptal.com/" rel="noreferrer noopener" target="_blank" class="u-a II">toptal.com</a>
                 </li>
                 
                 <li class="projects__list">
-                  <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="projects__link" aria-label="node js"> 
+                  <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="u-a" aria-label="node js"> 
                   Node.<i class="fa-brands fa-node-js"></i>
                   </a>
                 </li>
                 <li class="projects__list">
-                  <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="projects__link" aria-label="express js"> 
+                  <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="u-a" aria-label="express js"> 
                   Express.<i class="fa-brands fa-js"></i>
                   </a>
                 </li>
               </ul>
             
-              <h4>Challenges</h4>
+              <h4 class="projects__card-header">Challenges</h4>
               <p>
                 I came fresh out of "tutorial hell," with only 2–3 half-finished projects under my 
                 belt (one of which was a Pokémon API app—enough said, right?). I hadn’t learned any backend 
@@ -379,9 +385,11 @@
                 internalize best practices across multiple areas.
               </p>
               <p>
-                To improve my skills, I revisited <a href="https://www.freecodecamp.org/" class="projects__link II" rel="noopener noreferrer">FreeCodeCamp <i class="fa-brands fa-free-code-camp"></i></a> tutorials to learn backend 
+                To improve my skills, I revisited 
+                <a href="https://www.freecodecamp.org/" class="u-a II" rel="noopener noreferrer">FreeCodeCamp <i class="fa-brands fa-free-code-camp"></i> </a> 
+                tutorials to learn backend 
                 development and security basics. When I became burned out working on this site, 
-                I switched to the <a href="https://www.paznokcie-joanna-kielar.pl/" class="projects__link II" rel="noopener noreferrer">nail salon project</a>. 
+                I switched to the <a href="https://www.paznokcie-joanna-kielar.pl/" class="u-a II" rel="noopener noreferrer">nail salon</a> project. 
                 That project taught me valuable lessons about good design, UI, and UX, particularly for SPAs.
               </p>
               <p>
@@ -408,7 +416,7 @@
       <img src="images/self-positive960x720.jpg" alt="a picture of Björn" class="contact__profile-picture">
       <figcaption class="contact__figcaption">
         Photo by <a href="https://www.instagram.com/jarleveraart/?igsh=MXI1cXBxdTY1Nnk0dg%3D%3D" 
-                    class="contact__link everaart"
+                    class="u-a II"
                     target="_blank"
                     rel="noopener noreferrer">
                     Jarl Everaart
@@ -422,7 +430,7 @@
           <a href="https://www.linkedin.com/in/bj%C3%B6rn-van-der-lugt-136b7731a/" 
              target="_blank" 
              rel="noopener noreferrer"
-             class="contact__link">
+             class="u-a">
              <i class="fab fa-linkedin"></i> LinkedIn
           </a>
         </li>
@@ -431,7 +439,7 @@
           <a href="https://github.com/Bjorn-van-der-Lugt"
              target="_blank" 
              rel="noopener noreferrer"
-             class="contact__link">
+             class="u-a">
              <i class="fab fa-github"></i> GitHub
           </a>
         </li>
@@ -439,14 +447,14 @@
         <li class="contact__list">
           <a href="https://x.com/BjornVdLugt" target="_blank"
              rel="noopener noreferrer"
-             class="contact__link" 
+             class="u-a" 
              aria-label="X formally known as twitter">
             <i class="fa-brands fa-x-twitter"></i> .com
           </a>
         </li>
 
         <li class="contact__list">
-          <a class="contact__link" 
+          <a class="u-a" 
              href="Resume Björn van der Lugt.pdf" 
              download
              aria-label="Download my resume">
@@ -493,7 +501,7 @@
             <span class="error" id="email-error" aria-live="polite"></span>
           </div>
       
-          <div class="contact__form-group">
+          <div class="contact__form-group full-width">
             <label class="contact__label" for="subject">Subject: <span class="contact-form__required">*</span></label>
             <input 
               class="contact__input" 
@@ -526,7 +534,7 @@
       
         <button 
           id="contact__form-button" 
-          class="contact__form-button" 
+          class="contact__form-button u-button" 
           type="submit">
             Send <i class="fa-sharp-duotone fa-solid fa-paper-plane"></i>
         </button>
@@ -537,17 +545,17 @@
     <nav class="footer__nav" aria-label="Secondary Navigation">
       <ul class="footer__ul">
         <li class="footer__list footer__current-year"><span id="footer__current-year"></span> Björn van der Lugt. All rights reserved.</li>
-        <li class="footer__list"><a href="#landing" class="footer__link">Home</a></li>
-        <li class="footer__list"><a href="#about-me" class="footer__link">About Me</a></li>
-        <li class="footer__list"><a href="#projects" class="footer__link">Projects</a></li>
-        <li class="footer__list"><a href="#blog" class="footer__link">Blog</a></li>
-        <li class="footer__list u-hide-element"><a href="#contact" class="footer__link">Contact</a></li>
+        <li class="footer__list"><a href="#landing" class="u-a">Home</a></li>
+        <li class="footer__list"><a href="#about-me" class="u-a">About Me</a></li>
+        <li class="footer__list"><a href="#projects" class="u-a">Projects</a></li>
+        <li class="footer__list"><a href="#blog" class="u-a">Blog</a></li>
+        <li class="footer__list"><a href="#contact" class="u-a">Contact</a></li>
         
         <li class="footer__list">
           <a href="https://www.linkedin.com/in/bj%C3%B6rn-van-der-lugt-136b7731a/"
              target="_blank" 
              rel="noopener noreferrer"
-             class="footer__link">
+             class="u-a">
              <i class="fa-brands fa-linkedin"></i> LinkedIn
             </a>
           </li>
@@ -556,7 +564,7 @@
           <a href="https://github.com/Bjorn-van-der-Lugt" 
              target="_blank" 
              rel="noopener noreferrer"
-             class="footer__link"><i class="fa-brands fa-github">
+             class="u-a"><i class="fa-brands fa-github">
              </i> GitHub
           </a>
         </li>
@@ -565,7 +573,7 @@
             <a href="https://x.com/BjornVdLugt"
                target="_blank"
                rel="noopener noreferrer"
-               class="footer__link"
+               class="u-a"
                aria-label="X formally known as twitter">
                <i class="fa-brands fa-x-twitter"></i> .com
               </a>
@@ -575,7 +583,7 @@
             <a href="Resume Björn van der Lugt.pdf" 
                download 
                id="resume" 
-               class="footer__link"
+               class="u-a"
                aria-label="Download my resume">
                <i class="fa-sharp-duotone fa-solid fa-download">
                </i> Resume test

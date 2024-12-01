@@ -439,6 +439,8 @@ readers do not read off random characters that represent icons */
 .fa-moon { --fa: "\f186"; --fa--fa: "\f186\f186"; }
 .fa-navicon { --fa: "\f0c9"; --fa--fa: "\f0c9\f0c9"; }
 .fa-paper-plane { --fa: "\f1d8"; --fa--fa: "\f1d8\f1d8"; }
+.fa-share-alt { --fa: "\f1e0"; --fa--fa: "\f1e0\f1e0"; }
+.fa-share-nodes { --fa: "\f1e0"; --fa--fa: "\f1e0\f1e0"; }
 .fa-sun { --fa: "\f185"; --fa--fa: "\f185\f185"; }
 .fa-ufo { --fa: "\e047"; --fa--fa: "\e047\e047"; }
 

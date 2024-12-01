@@ -532,6 +532,39 @@ sass:
   label: sass
   unicode: e006
   voted: false
+share-nodes:
+  aliases:
+    names:
+      - share-alt
+    unicodes:
+      secondary:
+        - 10f1e0
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.0.0
+    - 6.1.2
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+  familyStylesByLicense:
+    free: []
+    pro:
+      - family: duotone
+        style: solid
+  label: Share Nodes
+  search:
+    terms:
+      - forward
+      - save
+      - send
+      - social
+  unicode: f1e0
+  voted: false
 sun:
   aliases:
     unicodes:

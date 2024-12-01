@@ -61,6 +61,10 @@ science-fiction:
   icons:
     - ufo
   label: Science Fiction
+social:
+  icons:
+    - share-nodes
+  label: Social
 spinners:
   icons:
     - sun

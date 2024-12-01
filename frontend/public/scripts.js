@@ -145,9 +145,7 @@ const PortfolioFunctions = (function () {
     };
 
     const NavigationManager = {
-        // Toggles visibility of elements to support mobile navigation
-        // Cache static elements (footer and sections) outside of the function
-        /*
+        
         toggleMenuVisibility() {
             const elementsToToggle = [
                 ...document.querySelectorAll('section'),
@@ -158,7 +156,6 @@ const PortfolioFunctions = (function () {
 
             elementsToToggle.forEach(element => element.classList.toggle('u-mobile-nav-open'));
         },
-        */
 
         // Handles project card expand/collapse functionality
         
@@ -166,10 +163,12 @@ const PortfolioFunctions = (function () {
             projectCard.forEach(card => {
                 const expandToggle = card.querySelector('.projects__expand-toggle');
                 const projectText = card.querySelector('.projects__text.wrapper');
+                const projectPreviewText = card.querySelector('.projects__preview-text');
                 const caret = expandToggle.querySelector('.fa-caret-down');
-                if (expandToggle && projectText) {
+                if (expandToggle && projectText && projectPreviewText) {
                     expandToggle.addEventListener('click', function () {
                         projectText.classList.toggle('expanded');
+                        projectPreviewText.classList.toggle('expanded');
                         caret.classList.toggle('fa-caret-up', projectText.classList.contains('expanded'));
                         caret.classList.toggle('fa-caret-down', !projectText.classList.contains('expanded'));
                     });
