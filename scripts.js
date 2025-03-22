@@ -10,6 +10,7 @@ const PortfolioFunctions = (function () {
     const formSubmitButton = document.getElementById('contact__form-button');
     const currentYearElement = document.getElementById('footer__current-year');
     const projectCard = document.querySelectorAll('.projects__card');
+    const copyToClipBoardFunctionality = document.querySelectorAll('.u-copy');
    
 
     // Modules
@@ -187,6 +188,34 @@ const PortfolioFunctions = (function () {
         }        
     };
 
+    const ClipboardManager = {
+        initCopyButtons() {
+            const toast = document.getElementById('copy-toast');
+    
+            copyToClipBoardFunctionality.forEach(button => {
+                button.addEventListener('click', () => {
+                    const url = button.getAttribute('data-url') || 'https://portfolio-bjornvanderlugt.com/';
+                    navigator.clipboard.writeText(url);
+    
+                    const rect = button.getBoundingClientRect();
+                    toast.style.top = `${rect.top - 40 + window.scrollY}px`;
+                    toast.style.left = `${rect.left + rect.width / 2}px`;
+                    toast.style.position = 'absolute';
+                    toast.style.transform = 'translateX(-50%)';
+    
+                    toast.classList.add('visible');
+                    toast.setAttribute('aria-hidden', 'false');
+    
+                    setTimeout(() => {
+                        toast.classList.remove('visible');
+                        toast.setAttribute('aria-hidden', 'true');
+                    }, 750);
+                });
+            });
+        }
+    };    
+    
+
     // Sets the current year in the footer dynamically
     function setCurrentYear() {
         if (currentYearElement) {
@@ -215,6 +244,7 @@ const PortfolioFunctions = (function () {
             contactForm.addEventListener('submit', (event) => FormManager.handleFormSubmit(event));
         }
         NavigationManager.handleProjectCardToggle();
+        ClipboardManager.initCopyButtons();
     }
 
     return {
