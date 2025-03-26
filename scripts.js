@@ -1,15 +1,12 @@
 const PortfolioFunctions = (function () {
     // Cache DOM elements to optimize performance by minimizing repeated queries
     const headerElement = document.getElementById('header');
-    const menuToggleButton = document.getElementById('header__menu-toggle');
-    const themeToggleButton = document.getElementById('header__mode-toggle');
-    const langToggleButton = document.getElementById('header__language-toggle');
-    const langDropdown = document.getElementById('header__languages-dropdown');
-    const contactForm = document.getElementById('contact__form');
-    const formFields = contactForm ? contactForm.querySelectorAll('input, textarea') : [];
-    const formSubmitButton = document.getElementById('contact__form-button');
+    const menuToggleButton = document.getElementById('menu-toggle');
+    const themeToggleButton = document.getElementById('mode-toggle');
+    const langToggleButton = document.getElementById('language-toggle');
+    const langMenu = document.getElementById('language-menu');
     const currentYearElement = document.getElementById('footer__current-year');
-    const projectCard = document.querySelectorAll('.projects__card');
+    const projectCard = document.querySelectorAll('.projects .card');
     const copyToClipBoardFunctionality = document.querySelectorAll('.u-copy');
    
 
@@ -162,9 +159,9 @@ const PortfolioFunctions = (function () {
         
         handleProjectCardToggle() {
             projectCard.forEach(card => {
-                const expandToggle = card.querySelector('.projects__expand-toggle');
-                const projectText = card.querySelector('.projects__text.wrapper');
-                const projectPreviewText = card.querySelector('.projects__preview-text');
+                const expandToggle = card.querySelector('.projects .expand-toggle');
+                const projectText = card.querySelector('.projects .content-wrapper');
+                const projectPreviewText = card.querySelector('.projects .intro-text');
                 const caret = expandToggle.querySelector('.fa-caret-down');
                 if (expandToggle && projectText && projectPreviewText) {
                     expandToggle.addEventListener('click', function () {
@@ -180,10 +177,10 @@ const PortfolioFunctions = (function () {
         handleLangToggle() {
             const caret = langToggleButton.querySelectorAll('i')[1];
             console.log(caret);
-            if (langDropdown) {
-                langDropdown.classList.toggle('expanded');
-                caret.classList.toggle('fa-caret-up', langDropdown.classList.contains('expanded'));
-            caret.classList.toggle('fa-caret-down', !langDropdown.classList.contains('expanded'));
+            if (langMenu) {
+                langMenu.classList.toggle('expanded');
+                caret.classList.toggle('fa-caret-up', langMenu.classList.contains('expanded'));
+            caret.classList.toggle('fa-caret-down', !langMenu.classList.contains('expanded'));
             }
         }        
     };
@@ -228,20 +225,12 @@ const PortfolioFunctions = (function () {
     function initializePortfolio() {
         ThemeManager.applyTheme(ThemeManager.activeTheme);
         setCurrentYear();
-        FormManager.validateFormFields();
 
         if (themeToggleButton) {
             themeToggleButton.addEventListener('click', () => ThemeManager.toggleTheme());
         }
         if (langToggleButton) {
             langToggleButton.addEventListener('click', () => NavigationManager.handleLangToggle());
-        }
-        formFields.forEach(field => field.addEventListener('input', () => FormManager.validateFormFields()));
-        if (menuToggleButton) {
-            menuToggleButton.addEventListener('click', () => NavigationManager.toggleMenuVisibility());
-        }
-        if (contactForm) {
-            contactForm.addEventListener('submit', (event) => FormManager.handleFormSubmit(event));
         }
         NavigationManager.handleProjectCardToggle();
         ClipboardManager.initCopyButtons();
