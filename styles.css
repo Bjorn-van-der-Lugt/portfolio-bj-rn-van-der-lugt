@@ -204,11 +204,11 @@ button, a {
     position: fixed;
     top: 0;
     width: 100%;
+    padding: calc( var(--padding-vertical) / 2 ) 0;
     background-color: var(--background-color-III);
     box-shadow: var(--box-shadow);
     font-size: 1.125rem;
     z-index: 1000;
-    padding: calc( var(--padding-vertical) * 1.5 ) 0; 
 }
 
 .header .nav {
@@ -308,7 +308,7 @@ button, a {
     align-items: center;
     position: absolute;
     width: 100%;
-    top: 120%; right: 0;
+    top: 100%; right: 0; left: 1rem;
     background-color: var(--background-color-III);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -360,41 +360,48 @@ button, a {
     width: 100%; height: 3.8rem;
 }
 
-.landing .cta-link {
+.landing .cta-link,
+.landing .share-link,
+.landing .copy-button {
     background-color: var(--button-bg);
     color: var(--button-color);
     height: 100%;
-    margin: calc( var(--margin-vertical) * 1.2 ) 0 calc( var(--margin-vertical) * 1.2 ) 8%; 
-    padding: var(--padding-vertical) var(--padding-horizontal);
-    border-radius: var(--border-radius);
-    font-size: 1.2rem;
+    margin-left: var(--margin-horizontal);
     outline-offset: 0;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--padding-vertical) var(--padding-horizontal);
+}
+
+.landing .share-link,
+.landing .copy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    font-size: 1.5rem;
+}
+
+.landing .cta-link {
+    font-size: 1.2rem;
 }
 .landing .cta-link i {
     margin-left: calc( var(--margin-horizontal) / 3 );
 }
 
 .landing .cta-link:hover,
-.landing .copy-button:hover {
+.landing .share-link:hover,
+.landing .copy-button:hover{
     background-color: var(--button-bg-hover);
     color: var(--button-color-hover);
     border: none;
 }
 .landing .cta-link:focus-visible,
+.landing .share-link:focus-visible,
 .landing .copy-button:focus-visible {
     background-color: var(--button-bg-focus);
     color: var(--button-color-focus);
     outline: var(--outline-button-focus);
-    border: none;
-}
-
-.landing .copy-button {
-    height: 100%; width: 4rem;
-    margin: 0 var(--margin-horizontal);
-    font-size: 1.5rem;
-    border-radius: var(--border-radius);
-    background-color: var(--button-bg);
-    color: var(--button-color);
     border: none;
 }
 
@@ -460,21 +467,26 @@ button, a {
     line-height: 1.4;
 }
 
-.about-me .item i {
-    font-size: 1.5rem;
-}
-  
 .about-me .item, 
 .about-me .item .u-a {
     display: flex;
     align-items: center;
-    justify-content: c;
+    justify-content: center;
+    text-align: center;
     gap: 0.5rem;
     color: inherit;
     border-radius: var(--border-radius);
   }
 
+.about-me .item i {
+    font-size: 1.5rem;
+}
+  
 /* LINKS */
+
+.about-me .item .u-a {
+    width: 100%; height: 100%;
+}
 
 .about-me .item .u-a i {
     color: var(--link-color);
@@ -482,6 +494,7 @@ button, a {
 
 .about-me .item .u-a:hover {
     color: var(--link-color-hover);
+    background-color: var(--link-bg-focus);
 }
 
 .about-me .item .u-a:focus-visible {
@@ -491,15 +504,15 @@ button, a {
 }
 
 .about-me .item .mongoose {
-    color: var(--link-color) !important;
+    color: var(--link-color);
 }
 
 .about-me .item .mongoose:hover {
-    color: var(--link-color-hover) !important;
+    color: var(--link-color-hover);
 }
 
 .about-me .item .mongoose:focus-visible {
-    color: var(--link-color-focus) !important;
+    color: var(--link-color-focus);
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -577,9 +590,9 @@ button, a {
 
 .projects .button {
     margin: 0 calc( var(--margin-horizontal) / 2 );
-    padding: calc( var(--padding-vertical) / 4 ) var(--padding-horizontal);
-    font-size: 1.2rem;
-    width: 4rem; height: 2rem;
+    padding: calc( var(--padding-vertical) / 2 ) var(--padding-horizontal);
+    font-size: 1.3rem;
+    width: 4rem; 
     background-color: var(--button-bg);
     color: var(--button-color);
     border: none;
@@ -620,27 +633,27 @@ button, a {
     gap: 0 calc( var(--margin-horizontal) / 2 );
 }
 
-.projects .list .u-a i {
+/* CONTENT - LINKS */
+
+.projects .u-a i {
     color: var(--link-color);
 }
 
-/* CONTENT - LINKS */
-
-.projects .list .u-a {
+.projects .u-a {
     color: inherit;
     border-radius: var(--border-radius);
 }
 
-.projects .list .u-a.II {
+.projects .u-a.II {
     color: var(--link-color);
 }
 
-.projects .list .u-a:hover,
-.projects .list .u-a.II:hover {
+.projects .u-a:hover,
+.projects .u-a.II:hover {
     color: var(--link-color-hover);
 } 
-.projects .list .u-a:focus-visible,
-.projects .list .u-a.II:focus-visible {
+.projects .u-a:focus-visible,
+.projects .u-a.II:focus-visible {
     color: var(--link-color-focus);
     background-color: var(--link-bg-focus);
     outline: var(--outline-link-focus);
@@ -650,63 +663,82 @@ button, a {
 /* !!!!!!!! CONTACT !!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-.contact {
-    scroll-margin: calc( var(--margin-vertical) * 10 );
+#contact {
+    margin: calc( var(--margin-vertical) * 1.5 ) 0;
+    scroll-margin: calc( var(--margin-vertical) * 7.5 );
 }
 
-.contact .grid {
+/* CONTACT GRID */
+
+.contact .contact-grid {
     display: grid;
-    grid-template-columns: 1fr;
-  }
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem; 
+}
 
-  .contact .item {
+/* CONTACT ITEM */
+
+.contact .item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 
-    var(--padding-vertical) 
-    var(--padding-horizontal)
-    calc( var(--padding-vertical) * 1.5)
-    0;
-    border-bottom: 1px solid #ddd;
-  }
+    border-radius: var(--border-radius);
+    background-color: var(--background-color-II);
+    box-shadow: var(--box-shadow);
+    margin: calc( var(--margin-vertical) / 2 ) 0;
+}
 
-  .contact .item i {
-    font-size: 2.5rem;
+.contact .item i {
+    font-size: 2rem;
     color: inherit;
-  }
+}
 
-  .contact span {
-    font-size: 1.5rem;
-  }
+/* CONTACT CATEGORY */
 
-  .contact .item.email {
-    justify-content: flex-start;
-    gap: 2rem;
-  }
+.contact .category {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: var(--padding-vertical);
+    margin: var(--margin-vertical) 0;
+}
 
-  /* BUTTONS / LINKS */
+.contact .category span {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 1rem;
+}
 
-  .contact .item .button,
-  .contact .item .u-a {
+/* BUTTONS / LINKS */
+
+.contact .item .button,
+.contact .item .u-a {
+    width: 100%; height: 100%;
+    text-align: center;
     padding: var(--padding-vertical) var(--padding-horizontal);
-    background-color: var(--button-bg);
-    color: var(--button-color);
+    color: var(--color);
     border: none;
     border-radius: var(--border-radius);
-  }
-  .contact .item .u-a.whatsapp {
-    background-color: #25D366;
-  }
+    background-color: transparent;
+}
 
+.contact .item .u-a:hover,
+.contact .item .button:hover {
+    background-color: var(--background-color);
+}
+
+.contact .item .u-a:focus-visible,
+.contact .item .button:focus-visible {
+    background-color: var(--background-color);
+    outline: var(--outline-button-focus);
+}
 
 /* footer */
 
 .footer { 
-    background-color: var(--footer-background-color);
+    background-color: var(--background-color-III);
     margin: calc( var(--margin-vertical) * 1.5 ) 0 0 0;
-    padding: var(--padding-vertical) 0;
     color: inherit;
+    padding: 1rem;
 }
 
 .footer__ul {
@@ -714,13 +746,8 @@ button, a {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: var(--padding-vertical) var(--padding-horizontal);
     max-width: var(--max-width);
     margin: 0 auto;
-}
-
-.footer__list { 
-   margin: var(--margin-vertical) var(--margin-horizontal);
 }
 
 .footer__ul .u-a {
@@ -729,7 +756,7 @@ button, a {
 
 .u-toast {
     display: none;   
-    background-color: var(--header-background-color);
+    background-color: var(--background-color-III);
     padding: calc( var(--padding-vertical) / 2 ) calc( var(--padding-horizontal) / 2 );
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);

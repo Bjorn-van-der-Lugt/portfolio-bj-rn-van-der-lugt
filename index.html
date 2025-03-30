@@ -130,10 +130,14 @@
 <section id="landing" class="landing">
   <div class="sinister">
     <h1 class="heading">Welcome to My Portfolio</h1>
-    <p class="text">I'm Björn van der Lugt, a Full-Stack Developer Specializing in MERN and the web</p>
+    <p class="text">I'm Björn van der Lugt, a Full-Stack Developer Specializing in MERN and the web stack</p>
     <div class="button-wrapper">
     <a href="#projects" class="cta-link">My Work <i class="fa-sharp-duotone fa-solid fa-space-station-moon-construction"></i></a>
-    <button class="copy-button u-copy" data-url="https://portfolio-bjornvanderlugt.com/"><i class="fa-sharp-duotone fa-solid fa-copy"></i></button>
+    <a class="share-link" href="mailto:?body=https://portfolio-bjornvanderlugt.com" target="_blank" title="Share portfolio via email">
+      <i class="fa-sharp-duotone fa-solid fa-share-nodes"></i>
+    </a>
+    <button class="copy-button u-copy" data-url="https://portfolio-bjornvanderlugt.com/" title="Copy portfolio link to clipboard">
+      <i class="fa-sharp-duotone fa-solid fa-copy"></i></button>
   </div>
   </div>
   <div class="dexter"></div>
@@ -167,7 +171,7 @@
       <h3 class="heading">My Tech Stack <i class="fa-sharp-duotone fa-solid fa-terminal"></i></h3>
 
       <p>Prompt Engineering & AI-Augmented Development
-        Mastering ChatGPT as a development partner — streamlining full-stack workflows, 
+        Mastering ChatGPT and GitHub Copolot as development partners — streamlining full-stack workflows, 
         scaffolding, debugging, and architectural planning through precise, high-context prompts.</p>
 
       
@@ -294,8 +298,8 @@
             </p>
           </div>
           <div class="button-wrapper">
-            <button class="button copy-button u-copy" data-url="https://www.paznokcie-joanna-kielar.pl/"><i class="fa-sharp-duotone fa-solid fa-copy"></i></button>
-            
+            <button class="button share" title="Share this project via email"><i class="fa-sharp-duotone fa-solid fa-share-nodes"></i></button>
+            <button class="button copy-button u-copy" data-url="https://www.paznokcie-joanna-kielar.pl/" title="Copy project link to clipboard"><i class="fa-sharp-duotone fa-solid fa-copy"></i></button>
             <button class="button expand-toggle"><i class="fa-solid fa-caret-down"></i></button>
           </div>
 
@@ -372,82 +376,154 @@
     <!-- !!!!!!!!!!!!!! CONTACT !!!!!!!!!!!!!!! -->
     <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-    <section id="contact" class="contact grid">
+    <section id="contact" class="contact">
+      <div class="contact-grid">
+      
+        <!-- PHONE -->
 
-      <!-- PHONE -->
+        <h3 class="category">Phone <span> +31 681195664</span></h3>
 
-      <h3 class="heading">Phone</h3>
-      <div class="item phone">
-          <span>+31 6 81195664</span> 
+        <!-- PHONE - COPY NUMBER -->
+
+        <div class="item">
           <button class="button u-copy" 
-                  data-copy="+31681195664">
-                    <i class="fa-sharp-duotone fa-solid fa-copy"></i>
+                  data-copy="+31681195664"
+                  title="Copy my mobile number">
+                  <i class="fa-sharp-duotone fa-solid fa-copy"></i>
           </button>
-          <a href="tel:+31681195664" class="u-a"><i class="fa-sharp-duotone fa-solid fa-phone"></i></a> 
-          <a href="sms:+31681195664" class="u-a"><i class="fa-sharp-duotone fa-solid fa-comment-sms"></i></a>  
+       </div>
+      
+        <!-- PHONE - CALL -->
+      
+        <div class="item">
+          <a href="tel:+31681195664" 
+             class="u-a"
+             title="Call me on my mobile number">
+            <i class="fa-sharp-duotone fa-solid fa-phone"></i>
+          </a> 
+        </div>
+      
+        <!-- PHONE - SMS -->
+      
+        <div class="item">
+          <a href="sms:+31681195664" 
+             class="u-a"
+             title="Send me a text message">
+              <i class="fa-sharp-duotone fa-solid fa-comment-sms"></i>
+          </a>  
+        </div>
+      
+        <!-- PHONE - WHATSAPP -->
+      
+        <div class="item">
           <a href="https://wa.me/31681195664" 
              class="u-a whatsapp" 
-             target="_blank"
-             rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
-
-      <!-- SOCIAL MEDIA -->
-
-      <h3 class="heading">Social Media</h3>
-      <div class="item social-media">
-        <span>Slide in my DM's</span>
-
-        <!-- SOCIAL MEDIA - LINKEDIN -->
-         
-          <a href="https://www.linkedin.com/in/bj%C3%B6rn-van-der-lugt-136b7731a/" 
-             class="u-a"
              target="_blank" 
-             rel="noopener noreferrer">
-              <span><i class="fa-brands fa-linkedin"></i>
+             rel="noopener noreferrer"
+             title="Send me a WhatsApp message">
+              <i class="fa-brands fa-whatsapp"></i>
           </a>
-
-          <!-- SOCIAL MEDIA - X -->
-
-          <a href="https://x.com/BjornVdLugt" 
-             class="u-a"
-             target="_blank" 
-             rel="noopener noreferrer" 
-             aria-label="X formally known as Twitter">
-             <i class="fa-brands fa-x-twitter"></i>
-          </a>
-
-          <!-- SOCIAL MEDIA - GITHUB -->
-
-          <a href="https://github.com/Bjorn-van-der-Lugt" 
-             class="u-a"
-             target="_blank" 
-             rel="noopener noreferrer">
-              <i class="fa-brands fa-github"></i>
-        </a>
-
-        <!-- SOCIAL MEDIA - EMAIL -->
-        <a href="mailto:bjorn.vd.lugt@gmail.com"
-        class="u-a">
-          
-          <i class="fa-duotone fa-solid fa-envelope"></i></a>
-      </div>
+        </div>
 
       <!-- EMAIL -->
-
       
-      <div class="item email">
-        <h3 class="heading">Email</h3>
-        <span></span>
-        <button class="button"><span>bjorn.vd.lugt@gmail.com</span> <i class="fa-sharp-duotone fa-solid fa-copy"></i></button>
-      </div>
+      <h3 class="category">Email & CV <span>bjorn.vd.lugt@gmail.com</span></h3>
+
+      <!-- EMAIL - COPY -->
+
       <div class="item">
-        <p>
-          <a href="Resume Björn van der Lugt.pdf" download>
-            Download My Resume
-          </a>
-        </p>
+        <button class="button u-copy"><i class="fa-sharp-duotone fa-solid fa-copy" title="Copy my email adress"></i></button>
       </div>
-    </section>
+
+      <!-- EMAIL - SEND -->
+
+      <div class="item">
+        <a href="mailto:bjorn.vd.lugt@gmail.com"
+           class="u-a"
+           title="Send me an email">
+            <i class="fa-duotone fa-solid fa-envelope"></i>
+        </a>
+      </div>
+
+      <!-- RESUME - DOWNLOAD -->
+
+      <div class="item">
+        <a href="Resume Björn van der Lugt.pdf"
+           class="u-a" 
+           title="Download my resume"
+           download>
+            <i class="fa-sharp-duotone fa-solid fa-download"></i>
+        </a>
+      </div>
+      
+        <!-- SOCIAL MEDIA -->
+      
+        <h3 class="category">Social Media</h3>
+
+        <!-- SOCIAL MEDIA - LINKEDIN -->
+
+        <div class="item">
+          <a href="https://www.linkedin.com/in/bj%C3%B6rn-van-der-lugt-136b7731a/" 
+             class="u-a" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             title="Connect with me on LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      
+        <!-- SOCIAL MEDIA - X / TWITTER -->
+
+        <div class="item">
+          <a href="https://x.com/BjornVdLugt" 
+             class="u-a" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             aria-label="X formally known as Twitter"
+             title="Connect with me on X, formally known as Twitter"><i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+
+      <!-- SOCIAL MEDIA - GITHUB -->
+
+      <div class="item">
+        <a href="https://github.com/Bjorn-van-der-Lugt" 
+           class="u-a"
+           target="_blank" 
+           rel="noopener noreferrer"
+           title="Connect with me on GitHub">
+             <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <!-- PORTFOLIO -->
+
+      <h3 class="category">Portfolio</h3>
+
+      <!-- PORTFOLIO - COPY -->
+
+      <div class="item">
+        <button class="button u-copy" 
+                data-copy="https://portfolio-bjornvanderlugt.com/"
+                title="Copy my portfolio link">
+                <i class="fa-sharp-duotone fa-solid fa-copy"></i>
+        </button>
+      </div>
+
+      <!-- PORTFOLIO - SHARE -->
+
+      <div class="item">
+        <a href="mailto:?body=https://portfolio-bjornvanderlugt.com/" 
+           class="u-a" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           title="Share my portfolio via email">
+           <i class="fa-sharp-duotone fa-solid fa-share-nodes"></i>
+        </a>
+      </div>
+      
+    </div>
+  </section>
     
   </main>
 
